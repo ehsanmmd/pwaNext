@@ -1,26 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@500;600;700;800&display=swap");
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* stylelint-disable at-rule-no-unknown */
+@theme {
+  /* Custom color palette - Cyber/Neon theme */
+  --color-cyber-dark: #0a0a0f;
+  --color-cyber-darker: #050508;
+  --color-cyber-purple: #6366f1;
+  --color-cyber-pink: #ec4899;
+  --color-cyber-cyan: #22d3ee;
+  --color-cyber-green: #10b981;
+  --color-cyber-orange: #f97316;
+  --color-cyber-surface: #1a1a2e;
+  --color-cyber-surface-light: #252540;
+  --color-cyber-border: #2a2a4a;
+  --color-cyber-text: #e2e8f0;
+  --color-cyber-text-muted: #94a3b8;
+
+  /* Typography */
+  --font-display: "Orbitron", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "JetBrains Mono", ui-monospace, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background-color: var(--color-cyber-dark);
+    color: var(--color-cyber-text);
+    font-family: var(--font-body);
+  }
+
+  ::selection {
+    background-color: var(--color-cyber-purple);
+    color: white;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cyber-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cyber-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyber-purple);
 }
