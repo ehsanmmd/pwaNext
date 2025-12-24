@@ -57,3 +57,14 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-cyber-purple);
 }
+
+/* Float animation for install prompt */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

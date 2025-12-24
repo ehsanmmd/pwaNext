@@ -95,7 +95,9 @@ export default function BackgroundSyncPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="font-['Orbitron'] text-3xl md:text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-cyber-pink to-cyber-orange bg-clip-text text-transparent">Background Sync</span>
+              <span className="bg-linear-to-r from-cyber-pink to-cyber-orange bg-clip-text text-transparent">
+                Background Sync
+              </span>
             </h1>
             <p className="text-cyber-text-muted max-w-2xl mx-auto">
               Queue actions while offline and automatically sync when connection
@@ -104,7 +106,7 @@ export default function BackgroundSyncPage() {
           </div>
 
           {/* Sync Support Status */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <div className="flex items-center gap-4">
               <div
                 className={`w-4 h-4 rounded-full ${
@@ -129,7 +131,7 @@ export default function BackgroundSyncPage() {
           </div>
 
           {/* Queue Demo */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4 flex items-center gap-2">
               <span>📝</span> Sync Queue Demo
             </h2>
@@ -150,7 +152,7 @@ export default function BackgroundSyncPage() {
               />
               <button
                 onClick={addToQueue}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
               >
                 Add to Queue
               </button>
@@ -205,7 +207,7 @@ export default function BackgroundSyncPage() {
                   isSyncing ||
                   queue.filter((q) => q.status === "pending").length === 0
                 }
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
               >
                 {isSyncing ? "⏳ Syncing..." : "🔄 Sync Now"}
               </button>
@@ -221,7 +223,7 @@ export default function BackgroundSyncPage() {
           </div>
 
           {/* How It Works */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               🔄 How Background Sync Works
             </h2>
@@ -284,7 +286,7 @@ export default function BackgroundSyncPage() {
           </div>
 
           {/* Code Example */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               📝 Implementation Code
             </h2>
@@ -345,7 +347,7 @@ async function processQueue() {
           </div>
 
           {/* Periodic Background Sync */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-r from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-r from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               ⏰ Periodic Background Sync
             </h2>

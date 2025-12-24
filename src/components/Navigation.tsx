@@ -23,7 +23,7 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl">⚡</span>
-            <span className="font-['Orbitron'] font-bold text-lg bg-gradient-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent hidden sm:inline">
+            <span className="font-['Orbitron'] font-bold text-lg bg-linear-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent hidden sm:inline">
               PWA Hub
             </span>
           </Link>
@@ -35,8 +35,8 @@ export function Navigation() {
                 key={href}
                 href={href}
                 className={`relative px-4 py-2 text-sm flex items-center gap-1 transition-colors ${
-                  pathname === href 
-                    ? "text-cyber-cyan after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:right-0 after:h-0.5 after:bg-cyber-cyan" 
+                  pathname === href
+                    ? "text-cyber-cyan after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:right-0 after:h-0.5 after:bg-cyber-cyan"
                     : "text-cyber-text-muted hover:text-cyber-cyan"
                 }`}
               >

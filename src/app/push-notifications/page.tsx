@@ -68,7 +68,9 @@ export default function PushNotificationsPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="font-['Orbitron'] text-3xl md:text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-cyber-pink to-cyber-orange bg-clip-text text-transparent">Push Notifications</span>
+              <span className="bg-linear-to-r from-cyber-pink to-cyber-orange bg-clip-text text-transparent">
+                Push Notifications
+              </span>
             </h1>
             <p className="text-cyber-text-muted max-w-2xl mx-auto">
               Learn how to implement push notifications in your PWA using the
@@ -78,7 +80,7 @@ export default function PushNotificationsPage() {
 
           {/* Support Check */}
           {!isSupported && (
-            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-orange bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-orange bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
               <div className="flex items-center gap-4">
                 <span className="text-4xl">⚠️</span>
                 <div>
@@ -97,7 +99,7 @@ export default function PushNotificationsPage() {
           {/* Status Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             {/* Permission Status */}
-            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
               <div className="text-sm text-cyber-text-muted mb-1">
                 Permission
               </div>
@@ -119,7 +121,7 @@ export default function PushNotificationsPage() {
             </div>
 
             {/* Subscription Status */}
-            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
               <div className="text-sm text-cyber-text-muted mb-1">
                 Subscription
               </div>
@@ -133,7 +135,7 @@ export default function PushNotificationsPage() {
             </div>
 
             {/* Support Status */}
-            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
               <div className="text-sm text-cyber-text-muted mb-1">Support</div>
               <div
                 className={`font-['Orbitron'] font-bold ${
@@ -147,7 +149,7 @@ export default function PushNotificationsPage() {
 
           {/* Error Display */}
           {error && (
-            <div className="relative overflow-hidden rounded-2xl p-6 border border-red-500 bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+            <div className="relative overflow-hidden rounded-2xl p-6 border border-red-500 bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
               <div className="flex items-center gap-2 text-red-500">
                 <span>⚠️</span>
                 <span>{error}</span>
@@ -156,7 +158,7 @@ export default function PushNotificationsPage() {
           )}
 
           {/* Actions */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-6">
               Subscription Management
             </h2>
@@ -166,7 +168,7 @@ export default function PushNotificationsPage() {
                 <button
                   onClick={requestPermission}
                   disabled={!isSupported}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
                 >
                   Request Permission
                 </button>
@@ -176,7 +178,7 @@ export default function PushNotificationsPage() {
                 <button
                   onClick={subscribe}
                   disabled={isSubscribing}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
                 >
                   {isSubscribing ? "Subscribing..." : "Subscribe to Push"}
                 </button>
@@ -205,7 +207,7 @@ export default function PushNotificationsPage() {
           </div>
 
           {/* Notification Composer */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-6">
               📝 Compose Notification
             </h2>
@@ -247,7 +249,7 @@ export default function PushNotificationsPage() {
                 <button
                   onClick={handleSendPush}
                   disabled={sending || !subscription}
-                  className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
                 >
                   {sending ? "Sending..." : "🚀 Send Push"}
                 </button>
@@ -268,7 +270,7 @@ export default function PushNotificationsPage() {
           </div>
 
           {/* Preview */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               👁️ Preview
             </h2>
@@ -291,7 +293,7 @@ export default function PushNotificationsPage() {
           </div>
 
           {/* Code Examples */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               📝 Code Examples
             </h2>
@@ -357,7 +359,7 @@ await fetch('/api/push/subscribe', {
           </div>
 
           {/* VAPID Setup */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-r from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-r from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               🔑 VAPID Keys Setup
             </h2>

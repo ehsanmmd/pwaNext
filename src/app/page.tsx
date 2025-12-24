@@ -84,11 +84,11 @@ export default function Home() {
             </div>
 
             <h1 className="font-['Orbitron'] text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent">
                 PWA Learning
               </span>
               <br />
-              <span className="bg-gradient-to-r from-cyber-pink to-cyber-orange bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-cyber-pink to-cyber-orange bg-clip-text text-transparent">
                 Hub
               </span>
             </h1>
@@ -102,7 +102,7 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-4">
               <Link
                 href="/cache-strategies"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
               >
                 Start Learning
               </Link>
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Online Status */}
-              <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+              <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
                 <div className="flex items-center gap-3">
                   <div
                     className={`w-3 h-3 rounded-full ${
@@ -146,7 +146,7 @@ export default function Home() {
               </div>
 
               {/* Display Mode */}
-              <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+              <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
                 <div className="flex items-center gap-3">
                   <div className="text-2xl">{isStandalone ? "📱" : "🌐"}</div>
                   <div>
@@ -161,7 +161,7 @@ export default function Home() {
               </div>
 
               {/* Service Worker Status */}
-              <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+              <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
                 <div className="flex items-center gap-3">
                   <div className="text-2xl">
                     {serviceWorker.isInstalled ? "✅" : "⏳"}
@@ -189,7 +189,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <h2 className="font-['Orbitron'] text-2xl md:text-3xl font-bold text-center mb-12">
               Explore{" "}
-              <span className="bg-gradient-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent">
                 PWA Features
               </span>
             </h2>
@@ -199,7 +199,7 @@ export default function Home() {
                 <Link
                   key={href}
                   href={href}
-                  className={`relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent transition-all duration-300 hover:-translate-y-1 ${
+                  className={`relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent transition-all duration-300 hover:-translate-y-1 ${
                     glowClass === "hover:glow-purple"
                       ? "hover:shadow-[0_0_20px_rgba(99,102,241,0.3),0_0_40px_rgba(99,102,241,0.1)]"
                       : glowClass === "hover:glow-pink"
@@ -230,12 +230,12 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <h2 className="font-['Orbitron'] text-2xl font-bold text-center mb-8">
               Quick{" "}
-              <span className="bg-gradient-to-r from-cyber-pink to-cyber-orange bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-cyber-pink to-cyber-orange bg-clip-text text-transparent">
                 Code Preview
               </span>
             </h2>
 
-            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+            <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-3 h-3 rounded-full bg-red-500" />
                 <div className="w-3 h-3 rounded-full bg-yellow-500" />

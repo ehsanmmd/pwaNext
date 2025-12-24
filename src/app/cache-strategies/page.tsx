@@ -170,7 +170,9 @@ export default function CacheStrategiesPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="font-['Orbitron'] text-3xl md:text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent">Cache Strategies</span>
+              <span className="bg-linear-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent">
+                Cache Strategies
+              </span>
             </h1>
             <p className="text-cyber-text-muted max-w-2xl mx-auto">
               Learn different caching strategies used in Service Workers. Each
@@ -188,7 +190,7 @@ export default function CacheStrategiesPage() {
                   selectedStrategy.code === strategy.code
                     ? "border-cyber-purple shadow-[0_0_20px_rgba(99,102,241,0.3),0_0_40px_rgba(99,102,241,0.1)]"
                     : "border-cyber-border"
-                } bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent`}
+                } bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent`}
                 onClick={() => setSelectedStrategy(strategy)}
               >
                 <div className="flex items-start gap-4">
@@ -219,7 +221,7 @@ export default function CacheStrategiesPage() {
           </div>
 
           {/* Code Example */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-12">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-12">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4 flex items-center gap-2">
               <span className="text-2xl">📝</span>
               Code Example: {selectedStrategy.name}
@@ -234,7 +236,7 @@ export default function CacheStrategiesPage() {
           </div>
 
           {/* Cache Status */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-12">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-12">
             <div className="flex items-center justify-between mb-6">
               <h2 className="font-['Orbitron'] font-bold text-xl flex items-center gap-2">
                 <span className="text-2xl">💾</span>
@@ -297,7 +299,7 @@ export default function CacheStrategiesPage() {
           </div>
 
           {/* Test Section */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4 flex items-center gap-2">
               <span className="text-2xl">🧪</span>
               Test Cache Behavior
@@ -316,7 +318,7 @@ export default function CacheStrategiesPage() {
               />
               <button
                 onClick={handleTestFetch}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
               >
                 Test Fetch
               </button>
@@ -342,7 +344,7 @@ export default function CacheStrategiesPage() {
           </div>
 
           {/* Tips */}
-          <div className="mt-12 relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-r from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+          <div className="mt-12 relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-r from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               💡 Best Practices
             </h2>

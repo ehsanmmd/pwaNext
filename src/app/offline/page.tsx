@@ -46,7 +46,7 @@ export default function OfflinePage() {
         </p>
 
         {/* Available Features */}
-        <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent text-left mb-8">
+        <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent text-left mb-8">
           <h2 className="font-bold text-cyber-cyan mb-4">Available Offline:</h2>
           <ul className="space-y-2 text-sm text-cyber-text-muted">
             <li className="flex items-center gap-2">
@@ -79,7 +79,7 @@ export default function OfflinePage() {
         {/* Try Again Button */}
         <button
           onClick={() => window.location.reload()}
-          className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)] w-full mb-4"
+          className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)] w-full mb-4"
         >
           🔄 Try Again
         </button>

@@ -94,7 +94,9 @@ export default function OfflineDemoPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="font-['Orbitron'] text-3xl md:text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent">Offline Demo</span>
+              <span className="bg-linear-to-r from-cyber-purple to-cyber-cyan bg-clip-text text-transparent">
+                Offline Demo
+              </span>
             </h1>
             <p className="text-cyber-text-muted max-w-2xl mx-auto">
               Test your app&apos;s offline capabilities. Turn off your network
@@ -105,8 +107,10 @@ export default function OfflineDemoPage() {
           {/* Network Status Banner */}
           <div
             className={`relative overflow-hidden rounded-2xl p-6 border mb-8 ${
-              isOnline ? "border-cyber-green" : "border-cyber-orange shadow-[0_0_20px_rgba(236,72,153,0.3),0_0_40px_rgba(236,72,153,0.1)]"
-            } bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent`}
+              isOnline
+                ? "border-cyber-green"
+                : "border-cyber-orange shadow-[0_0_20px_rgba(236,72,153,0.3),0_0_40px_rgba(236,72,153,0.1)]"
+            } bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent`}
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
@@ -135,7 +139,7 @@ export default function OfflineDemoPage() {
           </div>
 
           {/* Offline Test */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4 flex items-center gap-2">
               <span>🧪</span> Cache Test
             </h2>
@@ -147,7 +151,7 @@ export default function OfflineDemoPage() {
             <button
               onClick={runOfflineTests}
               disabled={isTesting}
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)] mb-6"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)] mb-6"
             >
               {isTesting ? "Testing..." : "Run Offline Test"}
             </button>
@@ -188,7 +192,7 @@ export default function OfflineDemoPage() {
           </div>
 
           {/* Local Storage Demo */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4 flex items-center gap-2">
               <span>💾</span> Local Storage
             </h2>
@@ -209,7 +213,7 @@ export default function OfflineDemoPage() {
               <button
                 onClick={saveToLocal}
                 disabled={!localData.trim()}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-gradient-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-lg text-white bg-linear-to-r from-cyber-purple to-cyber-pink transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_30px_rgba(99,102,241,0.4)]"
               >
                 Save
               </button>
@@ -240,7 +244,7 @@ export default function OfflineDemoPage() {
           </div>
 
           {/* How It Works */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4 flex items-center gap-2">
               <span>📚</span> How Offline Works
             </h2>
@@ -284,7 +288,7 @@ export default function OfflineDemoPage() {
           </div>
 
           {/* Code Example */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-br from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent mb-8">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               📝 Offline-First Pattern
             </h2>
@@ -320,7 +324,7 @@ self.addEventListener('fetch', (event) => {
           </div>
 
           {/* Tips */}
-          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-gradient-to-r from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
+          <div className="relative overflow-hidden rounded-2xl p-6 border border-cyber-border bg-linear-to-r from-cyber-surface to-cyber-surface-light before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-linear-to-r before:from-transparent before:via-cyber-purple before:to-transparent">
             <h2 className="font-['Orbitron'] font-bold text-xl mb-4">
               💡 Offline Best Practices
             </h2>
